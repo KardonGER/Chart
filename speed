@@ -1,0 +1,7 @@
+#!/bin/sh
+
+#Init
+cd /home/pi/speed/stats
+python3 /home/pi/speed/stats/makecsv.py
+python3 /home/pi/speed/stats/chart.py
+sudo cp /home/pi/speed/stats/index.html /var/www/html/index.html
