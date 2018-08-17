@@ -2,7 +2,8 @@ import os
 import machine
 import dht
 
-d = dht.DHT11()
+
+d = dht.DHT11(machine.Pin(4))
 
 d.measure()
 temp = d.temperature()
